@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'dailyfresh.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'xm11',
+        'NAME': 'xm05',
         'USER':'root',
         'PASSWORD':'mysql',
         'HOST':'localhost',
@@ -92,6 +92,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
+TIME_ZONE = 'en-us'
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
@@ -105,4 +106,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
-StATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]   # 设置静态文件处理目录
+STATICFILES_DIRS = [os.path.join(BASE_DIR,'static'),]   # 设置静态文件处理目录
