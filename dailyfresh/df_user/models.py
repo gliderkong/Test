@@ -1,6 +1,7 @@
 from django.db import models
 from db.base_model import BaseModel   #  导入抽象模型基类
 
+
 # Create your models here.
 
 class Passport(BaseModel):

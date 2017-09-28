@@ -1,4 +1,8 @@
 from django.conf.urls import url
+from df_user import views
 
 
-url
+urlpatterns = [
+
+    url(r'index/',views.register),
+]

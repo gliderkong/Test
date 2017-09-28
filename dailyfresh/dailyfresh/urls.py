@@ -18,5 +18,5 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^usre/',include('df_user.urls')),  # 用户模块
+    url(r'^user/',include('df_user.urls')),  # 用户模块
 ]
